@@ -1,0 +1,38 @@
+/*
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Nixie One', cursive;
+*/
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.name-title {
+    display: inline-block;
+}
+
+.navbar {
+    display: inline-block;
+    align-items: right;
+}
+
+.emoji {
+    height: 20px;
+    width: 20px;
+}
+
+.tagline {
+    font-family: 'Nixie One', cursive;
+}
+
+
+
+
+
+
+
+
+
+
+
+
