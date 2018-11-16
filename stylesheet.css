@@ -1,19 +1,36 @@
 /*
 font-family: 'Nanum Gothic', sans-serif;
 font-family: 'Nixie One', cursive;
+
+Font-Family: 'Permanent Marker', Cursive;
+Font-Size: 55px;
+Font-Family: 'Overpass', Sans-Serif;
+Font-Size: 17px;
 */
 
 body {
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Overpass', Sans-Serif;
 }
 
 .name-title {
     display: inline-block;
+    font-weight: bold;
+    font-family: 'Permanent Marker', Cursive;
+    font-size: 55px;
 }
 
 .navbar {
-    display: inline-block;
-    align-items: right;
+    float: right;
+    font-family: 'Permanent Marker', Cursive;
+    font-size: 25px;
+
+}
+
+.tagline {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 .emoji {
@@ -21,8 +38,11 @@ body {
     width: 20px;
 }
 
-.tagline {
-    font-family: 'Nixie One', cursive;
+.project {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
 }
 
 
