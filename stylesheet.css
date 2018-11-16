@@ -30,7 +30,10 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 100px;
+    padding-top: 100px;
     width: 50%;
+    font-size: 20px;
 }
 
 .emoji {
@@ -43,6 +46,11 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 70%;
+}
+
+#icon1, #icon2 {
+    width: 40px;
+    display: inline-block;
 }
 
 
