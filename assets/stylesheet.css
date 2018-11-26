@@ -112,6 +112,12 @@ p {
     text-align: left;
 }
 
+.image {
+    width: 60%;
+    margin: 0 auto;
+    text-align: right;
+}
+
 #icon1, #icon2 {
     width: 40px;
     display: inline-block;
@@ -132,6 +138,7 @@ p {
     width: 20%;
     float: left;
 }
+
 
 
 
