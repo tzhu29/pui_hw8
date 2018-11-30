@@ -30,7 +30,7 @@ body {
     font-family: 'Overpass', Sans-Serif;
 }
 
-h1 {
+h1, iframe {
     font-family: 'Oswald', sans-serif;
     text-align: center;
 }
@@ -49,6 +49,14 @@ p, ol {
     margin: 0 auto;
 }
 
+ul {
+  list-style-type: none;
+}
+
+img {
+
+}
+
 .connect {
     margin: 0 auto;
     text-align: center;
@@ -63,7 +71,7 @@ p, ol {
     display: inline-block;
     font-weight: bold;
     font-family: 'Permanent Marker', Cursive;
-    font-size: 55px;
+    font-size: 5vw;
     margin-left: 20px;
 }
 
@@ -71,7 +79,7 @@ p, ol {
     display: flex;
     float: right;
     font-family: 'Permanent Marker', Cursive;
-    font-size: 25px;
+    font-size: 3vw;
     padding-top: 20px;
     margin-right: 20px;
 }
@@ -83,7 +91,7 @@ p, ol {
     padding-bottom: 100px;
     padding-top: 100px;
     width: 50%;
-    font-size: 40px;
+    font-size: 3vw;
     font-family: 'Oswald', sans-serif;
 }
 
@@ -110,6 +118,16 @@ p, ol {
     width: 100%;
     margin: 0 auto;
     text-align: left;
+    position: relative;
+    display: inline;
+}
+
+.imtip {
+  position: absolute;
+  bottom: 0;
+  right: 50;
+  width: 40%;
+
 }
 
 /* images contained in individual portfolio projects*/
@@ -130,23 +148,20 @@ p, ol {
     text-align: right;
 }
 
-/* Create two unequal columns that floats next to each other */
 .column {
-    display: inline-block;
+    float: left;
     padding: 10px;
 }
 
 .left {
   width: 25%;
+  text-align: right;
 }
 
 .right {
   width: 75%;
-}
-
-.mini {
-  width: 37.4%;
-}
+  margin-top: 12px;
+  }
 
 /* Clear floats after the columns */
 .row:after {
@@ -155,18 +170,13 @@ p, ol {
     clear: both;
 }
 
-.mySlides {
-     display:none;
-     width: 100%;
-}
-
 #icon1, #icon2 {
     width: 40px;
     display: inline-block;
 }
 
 #headshot {
-    width: 10%;
+    width: 50%;
     text-align: right;
 }
 
@@ -179,6 +189,7 @@ p, ol {
 #sidebar {
     width: 20%;
     float: left;
+    font-family: 'Permanent Marker', Cursive;
 }
 
 /* The dropdown container */
@@ -188,7 +199,7 @@ p, ol {
 
 /* Dropdown button */
 .dropdown .dropbtn {
-  font-size: 25px;
+  font-size: 3vw;
   border: none;
   outline: none;
   color: black;
@@ -227,25 +238,90 @@ p, ol {
     text-decoration: underline;
 }
 
+/* W3SCHOOLS SLIDESHOW CODE*/
+
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
     .column {
         width: 100%;
     }
+
+    .sticky-top {
+      position: relative;
+      margin-top: 0 !important;
+    }
   #sidebar {
       width: 100%;
     }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
+@media only screen and (max-width: 768px) {...}
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {...}
