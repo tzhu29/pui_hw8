@@ -1,13 +1,3 @@
-/*
-font-family: 'Nanum Gothic', sans-serif;
-font-family: 'Nixie One', cursive;
-
-Font-Family: 'Permanent Marker', Cursive;
-Font-Size: 55px;
-Font-Family: 'Overpass', Sans-Serif;
-Font-Size: 17px;
-*/
-
 a:link {
     text-decoration: none;
     color: black;
@@ -53,8 +43,8 @@ ul {
   list-style-type: none;
 }
 
-img {
-
+iframe {
+  width: 100%;
 }
 
 .connect {
@@ -132,14 +122,14 @@ img {
 
 /* images contained in individual portfolio projects*/
 .image {
-    width: 40%;
+    width: 120%;
     margin: 0 auto;
     text-align: right;
 }
 
 .header {
     font-family: 'Oswald', sans-serif;
-    text-align: left;
+    text-align: right;
 }
 
 .carousel-item {
@@ -148,6 +138,7 @@ img {
     text-align: right;
 }
 
+/* about me page columns left and right*/
 .column {
     float: left;
     padding: 10px;
@@ -160,20 +151,22 @@ img {
 
 .right {
   width: 75%;
-  margin-top: 12px;
+  margin-top: 15px;
   }
 
 /* Clear floats after the columns */
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
+
+/*for the Let's Connect bar at the bottom of each page */
 #icon1, #icon2 {
     width: 40px;
     display: inline-block;
-}
+  }
 
 #headshot {
     width: 50%;
@@ -203,7 +196,7 @@ img {
   border: none;
   outline: none;
   color: black;
-  padding-right: 35px;
+  padding-right: 4vw;
   background-color: inherit;
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
@@ -246,7 +239,7 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 45vw;
   position: relative;
   margin: auto;
 }
@@ -259,7 +252,7 @@ img {vertical-align: middle;}
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: black;
+  color: white;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -274,8 +267,8 @@ img {vertical-align: middle;}
 }
 
 /* On hover, add a grey background color */
-.prev:hover, .next:hover {
-  background-color: #f1f1f1;
+.prev, .next {
+  background-color: #A9A9A9;
   color: black;
 }
 
@@ -305,6 +298,10 @@ img {vertical-align: middle;}
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
+    .header {
+      text-align: center;
+    }
+
     .column {
         width: 100%;
     }
@@ -313,9 +310,12 @@ img {vertical-align: middle;}
       position: relative;
       margin-top: 0 !important;
     }
-  #sidebar {
-      width: 100%;
-    }
+
+    #sidebar {
+        width: 100%;
+      }
+
+
 }
 
 
@@ -325,6 +325,8 @@ img {vertical-align: middle;}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {...}
+
+
 
 
 

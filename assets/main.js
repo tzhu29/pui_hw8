@@ -1,3 +1,12 @@
+//data aos script to animate both index and about pages
+function initAOS() {
+  AOS.init({
+    duration: 1200,
+  });
+}
+
+/*sidebar scrolling animation*/
+
 $(window).on("load", function() {
     var offset = $("#sidebar").offset();
     var scrollDelay = 0
@@ -14,7 +23,7 @@ $(window).on("load", function() {
     });
 });
 
-/* script for cycling thru images in carousel, taken from W3Schools
+/* script for cycling thru images in carousel, from W3Schools
 https://www.w3schools.com/w3css/w3css_slideshow.asp */
 var slideIndex = [1,1];
 var slideId = ["mySlides1", "mySlides2", "mySlides3"]
