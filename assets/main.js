@@ -5,7 +5,8 @@ function initAOS() {
   });
 }
 
-/*sidebar scrolling animation*/
+/*sidebar scrolling animation,
+from here https://css-tricks.com/scrollfollow-sidebar/*/
 
 $(window).on("load", function() {
     var offset = $("#sidebar").offset();
