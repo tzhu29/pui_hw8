@@ -47,16 +47,7 @@ iframe {
   width: 100%;
 }
 
-.connect {
-    margin: 0 auto;
-    text-align: center;
-}
-
-.emoji {
-    height: 40px;
-    width: 40px;
-}
-
+/*namesake logo*/
 .name-title {
     display: inline-block;
     font-weight: bold;
@@ -85,6 +76,19 @@ iframe {
     font-family: 'Oswald', sans-serif;
 }
 
+/*emoji within homepage tagline*/
+.emoji {
+    height: 40px;
+    width: 40px;
+}
+
+/*let's connect bar at bottom of all pages*/
+.connect {
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*project images on homepage*/
 .project {
     display: block;
     margin-left: auto;
@@ -104,21 +108,6 @@ iframe {
     position: relative;
 }
 
-.monitor {
-    width: 100%;
-    margin: 0 auto;
-    text-align: left;
-    position: relative;
-    display: inline;
-}
-
-.imtip {
-  position: absolute;
-  bottom: 0;
-  right: 50;
-  width: 40%;
-
-}
 
 /* images contained in individual portfolio projects*/
 .image {
@@ -127,6 +116,7 @@ iframe {
     text-align: right;
 }
 
+/*headers in About Me Page*/
 .header {
     font-family: 'Oswald', sans-serif;
     text-align: right;
@@ -171,12 +161,6 @@ iframe {
 #headshot {
     width: 50%;
     text-align: right;
-}
-
-
-#content {
-    width: 80%;
-    float: right;
 }
 
 #sidebar {
@@ -229,6 +213,13 @@ iframe {
 
 .dropdown-content a:hover, .dropdown:hover .dropbtn {
     text-decoration: underline;
+}
+
+/*project body content*/
+
+#content {
+    width: 80%;
+    float: right;
 }
 
 /* W3SCHOOLS SLIDESHOW CODE*/
